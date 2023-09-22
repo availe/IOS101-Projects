@@ -21,6 +21,8 @@ The following **optional** features are implemented:
 
 ## Video Walkthrough
 
+https://user-images.githubusercontent.com/94802525/270064038-4cc90609-8be0-4ebf-9cab-e0df323abe30.mov
+
 ## Notes
 
 - Learned about closures and the transform property.
