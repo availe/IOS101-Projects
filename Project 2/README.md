@@ -13,18 +13,13 @@ The following **required** functionality is completed:
 - [X] User can select a new themed set to pull the goal word from
 - [X] User can select "alien wordle", causing the goal word to change after each guess
 
-
 The following **optional** features are implemented:
 
 - [X] App displays a reset button on the top left to reset the game (but make no changes to the settings)
 
-The following **additional** features are implemented:
-
 ## Video Walkthrough
 
-Here is a reminder on how to embed Loom videos on GitHub. Feel free to remove this reminder once you upload your README. 
-
-[Guide]](https://www.youtube.com/watch?v=GA92eKlYio4) .
+https://user-images.githubusercontent.com/94802525/271752793-f6266082-c17c-4442-8018-7ae1c46b5bd7.mp4
 
 ## Notes
 
