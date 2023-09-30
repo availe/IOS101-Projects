@@ -1,4 +1,4 @@
-# Project 2 - Wordle Part II*
+# Project 2 - Wordle Part II
 
 Submitted by: **Availe**
 
