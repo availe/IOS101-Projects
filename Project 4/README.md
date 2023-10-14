@@ -21,6 +21,7 @@ The following **optional** features are implemented:
 
 ## Video Walkthrough
 
+https://user-images.githubusercontent.com/94802525/275120570-0719e51e-3bd3-42f3-be9f-95278c54f947.mp4
 
 ## License
 
