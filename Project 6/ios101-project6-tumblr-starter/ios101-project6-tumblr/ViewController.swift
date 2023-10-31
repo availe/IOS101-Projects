@@ -9,15 +9,16 @@ import Nuke
 class ViewController: UIViewController, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
-
+    
     var posts: [Post] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "Home Page"
 
         tableView.dataSource = self
         fetchPosts()
-
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -77,5 +78,12 @@ class ViewController: UIViewController, UITableViewDataSource {
             }
         }
         session.resume()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let selectedIndex = tableView.indexPathForSelectedRow else {return}
+        let info = posts[selectedIndex.row]
+        guard let destination = segue.destination as? SecondaryViewController else {return}
+        destination.post = info
     }
 }
