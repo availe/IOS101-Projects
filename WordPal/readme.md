@@ -27,6 +27,8 @@ The following **optional** features are implemented:
 The following **additional** features are implemented:
 - [X] Word deletion
 
+---
+
 ### New Features Implemented - Week 1 Sprint:
 - [X] Ability for users to input words
 - [X] Multiple views
