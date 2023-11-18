@@ -10,7 +10,7 @@ struct PronounceViewModel: View {
             if let wordEntry = currSelectedWord {
                 let readThis = "Word: \(wordEntry.word). Definition: \(wordEntry.definition ?? "No definition available")"
                 let utterance = AVSpeechUtterance(string: readThis)
-                utterance.voice = AVSpeechSynthesisVoice(language: "en-US")
+                utterance.voice = AVSpeechSynthesisVoice(identifier: "com.apple.ttsbundle.siri_female_en-US_compact")
                 utterance.rate = 0.4
                 synthesizer.speak(utterance)
             }
