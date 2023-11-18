@@ -27,12 +27,6 @@ The following **optional** features are implemented:
 The following **additional** features are implemented:
 - [X] Word deletion
 
-### Video:
-
-Enable video audio to hear text-to-speech:
-
-https://user-images.githubusercontent.com/94802525/283985492-5c0609be-38b8-40a7-be2e-f6d0ab9ba9b4.mp4
-
 ## New Features Implemented - Week 1 Sprint:
 - [X] Ability for users to input words
 - [X] Multiple views
@@ -42,7 +36,13 @@ https://user-images.githubusercontent.com/94802525/283985492-5c0609be-38b8-40a7-
 - [X] Use API to fetch word definitions
 - [X] Text-to-speech to pronounce words
 - [X] Aesthetic UI (further improvements)
-- [X] Add and delete words 
+- [X] Add and delete words
+
+### Video:
+
+Enable video audio to hear text-to-speech:
+
+https://user-images.githubusercontent.com/94802525/283985492-5c0609be-38b8-40a7-be2e-f6d0ab9ba9b4.mp4
 
 ## Brainstorming
 
