@@ -27,12 +27,12 @@ The following **optional** features are implemented:
 The following **additional** features are implemented:
 - [X] Word deletion
 
-## New Features Implemented - Week 1 Sprint:
+### New Features Implemented - Week 1 Sprint:
 - [X] Ability for users to input words
 - [X] Multiple views
 - [X] Aesthetic UI 
 
-## New Features Implemented - Week 2 Sprint:
+### New Features Implemented - Week 2 Sprint:
 - [X] Use API to fetch word definitions
 - [X] Text-to-speech to pronounce words
 - [X] Aesthetic UI (further improvements)
