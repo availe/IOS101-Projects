@@ -10,7 +10,11 @@ struct WordDefinition: View {
         
         DisclosureGroup(
             isExpanded: $isExpanded,
-            content: { Text(definition).font(.title2).foregroundStyle(.white) },
+            content: {
+                ScrollView {
+                    Text(definition).font(.title2).foregroundStyle(.white)
+                }
+            },
             label: {
                 HStack {
                     Spacer()
@@ -19,11 +23,13 @@ struct WordDefinition: View {
                     Spacer()
                 }
             }
-        ).padding(.all, 5).frame(maxWidth: 250, alignment: .center).background(Color.blue.opacity(0.95)).cornerRadius(3.0).disabled(currSelectedWord == nil)
+        ).padding(.all, 5).frame(maxWidth: 250, alignment: .center).cornerRadius(3.0).disabled(currSelectedWord == nil)
             .onChange(of: currSelectedWord) {
             if let wordEntry = currSelectedWord {
-                DefinitionManager.extractDefinitionString(for: wordEntry) { definition in
+                DefinitionManager.fetchDefinition(for: wordEntry) { definition in
+                    // used to update content: in DisclosureGroup, or the box where you see the definition displayed in
                     self.definition = definition ?? "No definition available"
+                    // used to pass around the definition to other Views and ViewModels
                     self.currSelectedWord?.definition = definition ?? "No definition available"
                 }
             }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F003E9AF2B083DA1000919F4 /* AddWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F003E9AE2B083DA1000919F4 /* AddWordView.swift */; };
+		F003E9B12B084C74000919F4 /* NavDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = F003E9B02B084C74000919F4 /* NavDestination.swift */; };
 		F00E955E2B082CBC008FD1C8 /* PronouncerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00E955D2B082CBC008FD1C8 /* PronouncerApp.swift */; };
 		F00E95602B082CBC008FD1C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00E955F2B082CBC008FD1C8 /* ContentView.swift */; };
 		F00E95622B082CBE008FD1C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F00E95612B082CBE008FD1C8 /* Assets.xcassets */; };
@@ -18,9 +20,8 @@
 		F00E958E2B082D90008FD1C8 /* DefinitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00E958D2B082D90008FD1C8 /* DefinitionManager.swift */; };
 		F00E95902B082DAA008FD1C8 /* WordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00E958F2B082DAA008FD1C8 /* WordModel.swift */; };
 		F00E95922B082DC8008FD1C8 /* DefinitionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00E95912B082DC8008FD1C8 /* DefinitionViewModel.swift */; };
-		F00E95942B082DF5008FD1C8 /* HearPronunciationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00E95932B082DF5008FD1C8 /* HearPronunciationViewModel.swift */; };
+		F00E95942B082DF5008FD1C8 /* PronounceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00E95932B082DF5008FD1C8 /* PronounceViewModel.swift */; };
 		F00E95962B082E0F008FD1C8 /* WordTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00E95952B082E0F008FD1C8 /* WordTabViewModel.swift */; };
-		F00E95982B082E2D008FD1C8 /* YouPronounceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00E95972B082E2D008FD1C8 /* YouPronounceViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F003E9AE2B083DA1000919F4 /* AddWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWordView.swift; sourceTree = "<group>"; };
+		F003E9B02B084C74000919F4 /* NavDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavDestination.swift; sourceTree = "<group>"; };
 		F00E955A2B082CBC008FD1C8 /* Pronouncer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pronouncer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F00E955D2B082CBC008FD1C8 /* PronouncerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PronouncerApp.swift; sourceTree = "<group>"; };
 		F00E955F2B082CBC008FD1C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,9 +58,8 @@
 		F00E958D2B082D90008FD1C8 /* DefinitionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionManager.swift; sourceTree = "<group>"; };
 		F00E958F2B082DAA008FD1C8 /* WordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordModel.swift; sourceTree = "<group>"; };
 		F00E95912B082DC8008FD1C8 /* DefinitionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewModel.swift; sourceTree = "<group>"; };
-		F00E95932B082DF5008FD1C8 /* HearPronunciationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HearPronunciationViewModel.swift; sourceTree = "<group>"; };
+		F00E95932B082DF5008FD1C8 /* PronounceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PronounceViewModel.swift; sourceTree = "<group>"; };
 		F00E95952B082E0F008FD1C8 /* WordTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTabViewModel.swift; sourceTree = "<group>"; };
-		F00E95972B082E2D008FD1C8 /* YouPronounceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouPronounceViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +112,8 @@
 			children = (
 				F00E955D2B082CBC008FD1C8 /* PronouncerApp.swift */,
 				F00E958A2B082D3E008FD1C8 /* Services */,
-				F00E95872B082CF0008FD1C8 /* Models */,
 				F00E95882B082CFE008FD1C8 /* Views */,
+				F00E95872B082CF0008FD1C8 /* Models */,
 				F00E95892B082D16008FD1C8 /* ViewModels */,
 				F00E95612B082CBE008FD1C8 /* Assets.xcassets */,
 				F00E95632B082CBE008FD1C8 /* Preview Content */,
@@ -156,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				F00E955F2B082CBC008FD1C8 /* ContentView.swift */,
+				F003E9AE2B083DA1000919F4 /* AddWordView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -164,9 +167,8 @@
 			isa = PBXGroup;
 			children = (
 				F00E95912B082DC8008FD1C8 /* DefinitionViewModel.swift */,
-				F00E95932B082DF5008FD1C8 /* HearPronunciationViewModel.swift */,
+				F00E95932B082DF5008FD1C8 /* PronounceViewModel.swift */,
 				F00E95952B082E0F008FD1C8 /* WordTabViewModel.swift */,
-				F00E95972B082E2D008FD1C8 /* YouPronounceViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -175,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				F00E958B2B082D7A008FD1C8 /* APIManager.swift */,
+				F003E9B02B084C74000919F4 /* NavDestination.swift */,
 				F00E958D2B082D90008FD1C8 /* DefinitionManager.swift */,
 			);
 			path = Services;
@@ -310,13 +313,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F003E9B12B084C74000919F4 /* NavDestination.swift in Sources */,
 				F00E95962B082E0F008FD1C8 /* WordTabViewModel.swift in Sources */,
 				F00E958C2B082D7A008FD1C8 /* APIManager.swift in Sources */,
 				F00E95602B082CBC008FD1C8 /* ContentView.swift in Sources */,
 				F00E958E2B082D90008FD1C8 /* DefinitionManager.swift in Sources */,
 				F00E95922B082DC8008FD1C8 /* DefinitionViewModel.swift in Sources */,
-				F00E95942B082DF5008FD1C8 /* HearPronunciationViewModel.swift in Sources */,
-				F00E95982B082E2D008FD1C8 /* YouPronounceViewModel.swift in Sources */,
+				F003E9AF2B083DA1000919F4 /* AddWordView.swift in Sources */,
+				F00E95942B082DF5008FD1C8 /* PronounceViewModel.swift in Sources */,
 				F00E955E2B082CBC008FD1C8 /* PronouncerApp.swift in Sources */,
 				F00E95902B082DAA008FD1C8 /* WordModel.swift in Sources */,
 			);

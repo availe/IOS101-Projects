@@ -14,14 +14,23 @@ struct ContentView: View {
                         }
                     }
                 }
-                WordDefinition(currSelectedWord: $wordTabViewModel.currSelectedWord).padding(.top)
-                    HearPronunciationViewModel(currSelectedWord: $wordTabViewModel.currSelectedWord).padding(.top)
-                    YouPronounceViewModel(currSelectedWord: $wordTabViewModel.currSelectedWord).padding(.top)
+                WordDefinition(currSelectedWord: $wordTabViewModel.currSelectedWord).padding(.top, 45)
+                PronounceViewModel(currSelectedWord: $wordTabViewModel.currSelectedWord).padding(.top)
                 Spacer()
-            }.navigationTitle("Dashboard")
+                NavigationLink(value: navDestination.addWord, label: {
+                    Label("Add Word", systemImage: "plus").foregroundStyle(.white)
+                })
+                Spacer()
+            }.navigationTitle("Home").navigationDestination(for: navDestination.self) { destination in
+                switch(destination) {
+                case .addWord:
+                    AddWordView(savedWords: $wordTabViewModel.savedWords)
+                }
+            }
         }
     }
 }
+
 #Preview {
     ContentView()
 }

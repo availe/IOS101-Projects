@@ -6,6 +6,7 @@ class WordEntry: Identifiable, Equatable {
         lhs.id == rhs.id
     }
     
+    // in retrospect should've used UUID but ColorManager relies on id being an Int
     let id: Int
     let word: String
     var color: Color { ColorManager.instance.getColor(index: id) }

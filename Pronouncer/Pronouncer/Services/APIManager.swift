@@ -2,6 +2,7 @@ import Foundation
 
 class APIManager {
     // fetchJSON() based off this: https://github.com/StewartLynch/DemystifyingCompletionHandlers/blob/main/LilStockQuote/Extensions%20%26%20Utilities/Service.swift
+    // app crashes whenever error occurs (such as if word not found), which is not ideal
     static func fetchJSON(for wordEntry: WordEntry, completion: @escaping ([DictionaryEntry]) -> Void) {
         let url = "https://api.dictionaryapi.dev/api/v2/entries/en/\(wordEntry.word)"
         guard let url = URL(string: url) else {
