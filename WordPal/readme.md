@@ -29,6 +29,8 @@ The following **additional** features are implemented:
 
 ### Video:
 
+Enable video audio to hear text-to-speech:
+
 https://user-images.githubusercontent.com/94802525/283985492-5c0609be-38b8-40a7-be2e-f6d0ab9ba9b4.mp4
 
 ## Brainstorming
